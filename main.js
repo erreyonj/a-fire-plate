@@ -7,24 +7,24 @@ if (window.innerWidth < 769) {
 
 
     const dinnerGallery = [
-        'js/dinner/dinner 1.png',
-        'js/dinner/dinner 2.png',
-        'js/dinner/dinner 3.png',
-        'js/dinner/dinner 4.png',
+        'dinner/dinner 1.png',
+        'dinner/dinner 2.png',
+        'dinner/dinner 3.png',
+        'dinner/dinner 4.png',
     ]
 
     const appetizerGallery = [
-        'js/appetizers/appetizer 1.png',
-        'js/appetizers/appetizer 2.png',
-        'js/appetizers/appetizer 3.png',
-        'js/appetizers/appetizer 4.png',
+        'appetizers/appetizer 1.png',
+        'appetizers/appetizer 2.png',
+        'appetizers/appetizer 3.png',
+        'appetizers/appetizer 4.png',
     ]
 
     const dessertGallery = [
-        'js/desserts/dessert 1.png',
-        'js/desserts/dessert 2.png',
-        'js/desserts/dessert 3.png',
-        'js/desserts/dessert 4.png',
+        'desserts/dessert 1.png',
+        'desserts/dessert 2.png',
+        'desserts/dessert 3.png',
+        'desserts/dessert 4.png',
     ]
 
 
