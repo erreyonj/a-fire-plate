@@ -1,0 +1,321 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+/* .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES (BORDERS INITIALIZED DURING DEV)
+/*******************************************/
+html {
+     font-size: 62.5%;
+}
+
+
+*::-webkit-scrollbar {
+     display: none;
+}
+
+h2 {
+     margin: 0;
+     font: 2.5rem/2.5rem "Julius Sans One", Helvetica;
+     text-align: center;
+     color: rgb(234,37,76);
+}
+
+h1 {
+     margin: 4% 0;
+     font: 2.5rem/1rem "Homemade Apple", Helvetica;
+     color: rgb(45,55,69);
+     padding-top: 2%;
+
+}
+
+h3 {
+     font: 2.5rem/1rem "Homemade Apple", Helvetica;
+     color: rgb(45,55,69); 
+}
+
+
+     @media all and (min-width:768px)  {
+        h1 {
+          font-size: 3.2rem;
+          margin: 1.9% 0;
+          /* font-weight: 600; */
+        } 
+        
+        
+     } 
+
+
+header {
+     /* border: 1px solid indianred; */
+}
+
+
+.btn {
+     outline: none;
+     border: none;
+     background-color: transparent;
+     color: rgb(45,55,69);
+}
+
+.btn:hover {
+     cursor: pointer;
+}
+
+#leftArrow {
+     position: absolute;
+     left: 25px;
+     bottom: 35%;
+     color: rgb(255,255,255);
+}
+#rightArrow {
+     position: absolute;
+     right: 25px;
+     bottom: 35%;
+     color: rgb(255,255,255);
+}
+
+#downArrow {
+     position: absolute;
+     bottom: 10%;
+     color: rgba(242,238,235,.5)
+}
+
+i.fa-solid {
+     background-color: transparent;
+     border: none;
+}
+
+     /******************************************
+     /* BUTTON TABLET SETTINGS
+     /*******************************************/
+
+     @media all and (min-width:768px) {
+          #leftArrow {
+               position: absolute;
+               left: 160px;
+               bottom: 52%;
+               color: rgb(255,255,255);
+          }
+          #rightArrow {
+               position: absolute;
+               right: 160px;
+               bottom: 52%;
+               color: rgb(255,255,255);
+          }
+          
+          #downArrow {
+               position: absolute;
+               bottom: 26%;
+               color: rgba(242,238,235,.7)
+          }
+     }
+
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+header {
+     display: flex;
+     justify-content: space-between;
+     height: 50px;
+     width: 100%;
+     background-color: rgb(253,255,255);
+     /* box-shadow: 0 1.5px 1px rgba(0, 0, 0, .6); */
+     position: fixed;
+     top: 0;
+}
+
+.headerMenu {
+     height: 100%;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+     padding-left: 5px;
+}
+
+.headerTitle {
+     display: flex;
+     justify-content: space-around;
+     width: 50%;
+}
+
+.headerTitle h2 {
+     align-self: flex-end;
+}
+
+     @media screen and (min-width:768px) {
+          .headerTitle {
+               width: 35%;
+          }
+     }
+
+
+
+/******************************************
+/* TRUEBODY(MAIN STRUCTURE)
+/*******************************************/
+#trueBody {
+     height: 100vh;
+     background-color: rgb(80,169,168);
+     margin-top: 50px;
+}
+
+
+/******************************************
+/* SECTION ONE
+/*******************************************/
+#one {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+}
+     .scrollSection {
+          display: flex;
+          flex-flow: column nowrap;
+     }
+
+     #menuCategory {
+          opacity: 0;
+          transition: opacity .5s ease-in-out;
+     }
+
+     #menuCategory.active {
+          opacity: 1;
+     }
+
+     .scrollSection .card {
+          height: 700px;
+          object-fit: cover;
+          box-shadow: inset 0 1.5px 1px rgba(0, 0, 0, .6);
+          opacity: 0;
+          transition: opacity .9s ease-in-out;
+     }
+
+     .active.card{
+          opacity: 1;
+     }
+
+     #one .gallery {
+          padding: 1rem;
+          height: 90%;
+          width: 95%;
+          overflow: scroll;
+          scrollbar-width: none;
+     }
+
+     #one #abtUsTablet {
+          display: none;
+          visibility: hidden;
+     }
+
+
+          /******************************************
+          /* SECTION ONE TABLET SETTINGS
+          /*******************************************/
+
+          @media screen and (min-width:768px) {
+               #one {
+                    justify-content: flex-start;
+               }
+               
+               #one .gallery {
+                    height: 65%;
+                    width: 85%;
+               }
+
+               #one #abtUsTablet {
+                    display: flex;
+                    visibility: visible;
+                    flex-flow: column nowrap;
+                    align-items: center;
+               }
+
+               #abtUsTablet h3 {
+                    display: flex;
+                    color: rgb(234,37,76);
+                    background-color: rgb(253,255,255);
+                    height: 40px;
+                    width: 50%;
+                    flex-flow: row wrap;
+                    place-content: center;
+                    margin: 1.9% 0;    
+               }
+
+               #abtUsTablet p {
+                    width: 65%;
+                    font: 1.7rem/1.5rem "Courgette", Helvetica;
+                    margin: 0;
+                    text-align: center;
+               }
+
+               .scrollSection .card {
+                    height: 575px;
+                    width: 450px;
+                    object-fit: cover;
+                    align-self: center;
+               }
+          }
+
+
+/******************************************
+/* FOOTER
+/*******************************************/
+footer {
+     display: flex;
+     justify-content: space-around;
+     height: 50px;
+     width: 100%;
+     background-color: #abadad;
+     position: fixed;
+     bottom: 0;
+}
+
+.floatingSocial.mobileView {
+     display: flex;
+     place-content: center;
+     visibility: visible;
+     width: 50%;
+     height: 100px;
+     position: relative;
+     bottom: 200px;
+}
+
+.socialBar {
+     display: flex;
+     place-content: center;
+     width: 50%;
+     height: 100%;
+}
+
+.socialBar a {
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+     text-decoration: none;
+     color: #F2EEEB;
+     margin: 0 12%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
