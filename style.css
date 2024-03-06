@@ -178,6 +178,14 @@ header {
      margin-top: 50px;
 }
 
+	/******************************************
+    	/* TRUEBODY TABLET SETTINGS - LANDSCAPE
+    	/*******************************************/
+	    @media screen and (min-width:875px) {
+	      #trueBody {
+	        margin-top: 0;
+	      }
+	    }
 
 /******************************************
 /* SECTION ONE
@@ -275,12 +283,235 @@ header {
                     align-self: center;
                }
           }
+/******************************************
+          /* SECTION ONE TABLET (LANDSCAPE) SETTINGS
+          /*******************************************/
+          @media all and (min-width:875px){
+            #body {
+              height: 100vh;
+            }
+            
+            #one {
+              width: 345px;
+            }
+            
+            #one h1 {
+              margin-top: 509px;
+              font-size: 2.5rem;
+            }
+            
+            #one #gallery {
+              width: 25%;
+              height: 70%;
+              position: absolute;
+              top: 0;
+              left: 50px;
+              margin-top: 0;
+              padding: 0;
+              box-shadow: 0 4px 5px rgba(0, 0, 0, .6);
+            }
+            
+            .scrollSection {
+              width: 100%;
+            }
+            
+            #gallery .scrollSection .card {
+              height: 100%;
+              width: 100%;
+            }
+            
+            #abtUsTablet p {
+              font-size: 1.2rem;
+              width: 80%;
+            }
+            
+            #abtUsTablet h3 {
+              font-size: 1.7rem;
+              width: 65%;
+              height: 30px;
+            }
+          }
+
+
+          /******************************************
+          /* SECTION ONE TABLET SETTINGS - FULLSCREEN
+          /*******************************************/
+          @media all and (min-width:1100px){
+            #trueBody #one h1.menuCategory {
+              margin-top: 600px;
+            }
+          }
+
+          @media screen and (min-width:1330px) {
+            #one {
+              margin-left: 45px;
+            }
+          }
+
+
+
+/******************************************
+/* SECTION TWO
+/*******************************************/
+@media screen and (max-width:874px){
+  #two {
+    display: none;
+    visibility: hidden;
+  } 
+}
+
+@media screen and (min-width:875px){
+  #body #two {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    height: 310px;
+    width: 700px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0 4px 5px rgba(0, 0, 0, .6);
+
+  }
+  
+  #two .testimonials.fullscreen {
+    height: 100%;
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    flex-flow: column wrap;
+    place-content: flex-end flex-start;
+    
+  }
+  
+  .testimonials.fullscreen h2 {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .testimonials.fullscreen .customerCards {
+    width: 95%;
+/*     display: flex; */
+    height: 230px;
+    overflow: scroll;
+/*     scrollbar-width: none; */
+  }
+  
+  #two .scroller {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .customerCards .reviews {
+    height: 100%;
+    width: 33%;
+    margin: 0 2%;
+    object-fit: cover;
+/*     border: .8px solid rgba(0,0,0,.8); */
+    background-color: rgba(255,255,255,1);
+  }
+  
+}
+
+
+
+
+
+/******************************************
+/* SECTION TWO - FULLSCREEN
+/*******************************************/
+
+@media all and (min-width:1330px) {
+  #body #two {
+    width: 1150px;
+  }
+}
+
+
+/******************************************
+/* SECTION THREE
+/*******************************************/
+@media screen and (max-width:874px){
+  #three {
+    display: none;
+    visibility: hidden;
+  } 
+}
+
+@media screen and (min-width:875px){
+  #body #three {
+    position: fixed;
+    right: 0;
+    bottom: 320px;
+    margin: 0;
+    height: 280px;
+    width: 645px;
+/*     background-color: rgba(255,255,255,1); */
+    background-color: transparent;
+/*     box-shadow: 0 4px 5px rgba(0, 0, 0, .6); */
+  }
+  
+  #three .featureCard {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+  }
+  
+  .featureCard p {
+    font: 1.5rem/1.7rem "Julius Sans One", Helvetica, sans-serif;
+    width: 60%;
+    margin-top: 50px;
+    color: white;
+  }
+  
+  .featureCard strong {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  
+  #ownerPhoto {
+    height: 88%;
+    width: 30%;
+    object-fit: cover;
+  }
+  
+  #chefHeader {
+    height: 12%;
+    width: 25%;
+    text-align: center;
+    background-color: white;
+    margin-left: 2%;
+  }
+  
+  
+}
+
+
+
+/******************************************
+/* SECTION THREE - FULLSCREEN
+/*******************************************/   
+@media screen and (min-width:1330px) {
+  #body #three {
+    width: 1120px;
+    height: 430px;
+  }
+  
+  #three #chefHeader {
+    height: 8%;
+  }
+  
+  #one #menuCategory {
+    margin-top: 600px;
+  }
+}
 
 
 /******************************************
 /* FOOTER
 /*******************************************/
-footer {
+#footer {
      display: flex;
      justify-content: space-around;
      height: 50px;
@@ -316,6 +547,24 @@ footer {
      margin: 0 12%;
 }
 
+
 /******************************************
-/* ADDITIONAL STYLES
+/* FOOTER TABLET LANDSCAPE SETTINGS (HOVER)
 /*******************************************/
+@media all and (min-width:875px) {
+  #body #footer{
+    width: 20%;
+    left: 75px;
+  }
+  
+  
+  #body #footer:hover {
+    height: 185px;
+    transition: height .4s ease-in-out;
+  }
+  
+  #footer #socialBar {
+    height: 50px;
+    align-self: flex-start;
+  }
+}
