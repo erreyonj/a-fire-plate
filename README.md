@@ -1,2 +1,2 @@
 # erre-restaurant-adv
-Here is a custom static site template that I created. It would be ideal for smaller restaurants that simply want to host their menu and basic information on a static site. Users of this template are likely not concerned with their site being the primary ordering platform.
+Here is a more advanced custom static site template that I created. It would be ideal for medium-traffic restaurants that want to host their menu, basic information, and a more modern design. Users of this template may want to implement ordering through one of the pages of this site and will likely require more back-end building.
