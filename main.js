@@ -1,4 +1,4 @@
-if (window.innerWidth < 769) {
+
     // Need functions that will select my scrollSection and insert img elements of my default dinner images from a folder
 
     const gallery = document.querySelector('.gallery');
@@ -155,6 +155,4 @@ if (window.innerWidth < 769) {
     //     let categoryName = document.querySelector('#menuCategory');
     //     document.querySelector('#one').removeChild(categoryName)
     // }
-} else {
-    
-}
+
