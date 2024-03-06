@@ -102,19 +102,19 @@ i.fa-solid {
 }
 
      /******************************************
-     /* BUTTON TABLET SETTINGS
+     /* BUTTON TABLET SETTINGS - PORTRAIT
      /*******************************************/
 
      @media all and (min-width:768px) {
           #leftArrow {
                position: absolute;
-               left: 160px;
+               left: 180px;
                bottom: 52%;
                color: rgb(255,255,255);
           }
           #rightArrow {
                position: absolute;
-               right: 160px;
+               right: 180px;
                bottom: 52%;
                color: rgb(255,255,255);
           }
@@ -124,6 +124,40 @@ i.fa-solid {
                bottom: 26%;
                color: rgba(242,238,235,.7)
           }
+     }
+
+     /******************************************
+     /* BUTTON TABLET SETTINGS - LANDSCAPE
+     /*******************************************/
+     @media all and (min-width:875px) {
+/*          .btn {
+               display: none;
+               visibility: hidden;
+          }
+        header .btn {
+            display: block;
+            visibility: visible;
+          } */
+          
+          #leftArrow {
+               position: absolute;
+               left: 5%;
+               bottom: 59%;
+          }
+          #one #rightArrow {
+               width: 25px;
+               position: absolute;
+               left: 26%;
+               bottom: 59%;
+          }
+          
+          #downArrow {
+               position: absolute;
+               bottom: 31%;
+               left: 14%;
+          }
+          
+         
      }
 
 
@@ -137,7 +171,7 @@ header {
      height: 50px;
      width: 100%;
      background-color: rgb(253,255,255);
-     /* box-shadow: 0 1.5px 1px rgba(0, 0, 0, .6); */
+/*      box-shadow: 0 1.5px 1px rgba(0, 0, 0, .6); */
      position: fixed;
      top: 0;
 }
@@ -161,12 +195,24 @@ header {
      align-self: flex-end;
 }
 
+
+
+     /******************************************
+     /* HEADER TABLET SETTINGS - PORTRAIT
+     /*******************************************/
      @media screen and (min-width:768px) {
           .headerTitle {
                width: 35%;
           }
      }
 
+
+     /******************************************
+     /* HEADER TABLET SETTINGS - LANDSCAPE
+     /*******************************************/
+     @media screen and (min-width:875px){
+                   
+     }
 
 
 /******************************************
