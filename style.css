@@ -1,4 +1,4 @@
-/* Box Model Hack */
+  /* Box Model Hack */
 * {
      box-sizing: border-box;
 }
@@ -31,21 +31,21 @@ html {
 
 h2 {
      margin: 0;
-     font: 2.5rem/2.5rem "Julius Sans One", Helvetica;
+     font: 2.5rem/2.5rem "Julius Sans One", Helvetica, sans-serif;
      text-align: center;
      color: rgb(234,37,76);
 }
 
 h1 {
      margin: 4% 0;
-     font: 2.5rem/1rem "Homemade Apple", Helvetica;
+     font: 2.5rem/1rem "Homemade Apple", Helvetica, sans-serif;
      color: rgb(45,55,69);
      padding-top: 2%;
 
 }
 
 h3 {
-     font: 2.5rem/1rem "Homemade Apple", Helvetica;
+     font: 2.2rem/1rem "Homemade Apple", Helvetica, sans-serif;
      color: rgb(45,55,69); 
 }
 
@@ -59,11 +59,6 @@ h3 {
         
         
      } 
-
-
-header {
-     /* border: 1px solid indianred; */
-}
 
 
 .btn {
@@ -130,15 +125,6 @@ i.fa-solid {
      /* BUTTON TABLET SETTINGS - LANDSCAPE
      /*******************************************/
      @media all and (min-width:875px) {
-/*          .btn {
-               display: none;
-               visibility: hidden;
-          }
-        header .btn {
-            display: block;
-            visibility: visible;
-          } */
-          
           #leftArrow {
                position: absolute;
                left: 5%;
@@ -159,7 +145,6 @@ i.fa-solid {
           
          
      }
-
 
 
 /******************************************
@@ -215,6 +200,7 @@ header {
      }
 
 
+
 /******************************************
 /* TRUEBODY(MAIN STRUCTURE)
 /*******************************************/
@@ -224,14 +210,15 @@ header {
      margin-top: 50px;
 }
 
-	/******************************************
-    	/* TRUEBODY TABLET SETTINGS - LANDSCAPE
-    	/*******************************************/
-	    @media screen and (min-width:875px) {
-	      #trueBody {
-	        margin-top: 0;
-	      }
-	    }
+
+    /******************************************
+    /* TRUEBODY TABLET SETTINGS - LANDSCAPE
+    /*******************************************/
+    @media screen and (min-width:875px) {
+      #trueBody {
+        margin-top: 0;
+      }
+    }
 
 /******************************************
 /* SECTION ONE
@@ -284,7 +271,7 @@ header {
 
 
           /******************************************
-          /* SECTION ONE TABLET SETTINGS
+          /* SECTION ONE TABLET (PORTRAIT) SETTINGS
           /*******************************************/
 
           @media screen and (min-width:768px) {
@@ -308,16 +295,16 @@ header {
                     display: flex;
                     color: rgb(234,37,76);
                     background-color: rgb(253,255,255);
-                    height: 40px;
+                    height: 36px;
                     width: 50%;
                     flex-flow: row wrap;
                     place-content: center;
-                    margin: 1.9% 0;    
+                    margin: 1.7% 0;    
                }
 
                #abtUsTablet p {
                     width: 65%;
-                    font: 1.7rem/1.5rem "Courgette", Helvetica;
+                    font: 1.3rem/1.5rem "Courgette", Helvetica, sans-serif;
                     margin: 0;
                     text-align: center;
                }
@@ -329,7 +316,9 @@ header {
                     align-self: center;
                }
           }
-/******************************************
+
+
+          /******************************************
           /* SECTION ONE TABLET (LANDSCAPE) SETTINGS
           /*******************************************/
           @media all and (min-width:875px){
@@ -614,3 +603,4 @@ header {
     align-self: flex-start;
   }
 }
+
